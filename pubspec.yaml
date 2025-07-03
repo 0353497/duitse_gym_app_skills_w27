@@ -1,0 +1,32 @@
+name: duitse_gym_app
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_native_splash: ^2.4.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+  - assets/Map.png
+  - assets/Icon.png
+  - assets/Data.json
+  - assets/Arial/
+  - assets/Icons/
+  fonts:
+    - family: Arial
+      fonts:
+        - asset: assets/Arial/Arial.ttf
+        - asset: assets/Arial/Arial Bold Italic.ttf
+          weight: 700
