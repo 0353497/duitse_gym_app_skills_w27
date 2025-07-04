@@ -1,5 +1,6 @@
 import 'package:duitse_gym_app/data/users.dart';
 import 'package:duitse_gym_app/pages/loginpage.dart';
+import 'package:duitse_gym_app/pages/membership_page.dart';
 import 'package:flutter/material.dart';
 
 class Homepage extends StatelessWidget {
@@ -63,7 +64,9 @@ class Homepage extends StatelessWidget {
             ),
             HomePageCard(
               icon: "assets/Icons/User attributes.png",
-              text: "MemberShip", ontap: () {  },
+              text: "MemberShip", ontap: () { 
+                Navigator.push(context, MaterialPageRoute(builder: (_) => MembershipPage(user: user)));
+              },
             ),
              HomePageCard(
                icon: "assets/Icons/Location on.png",
