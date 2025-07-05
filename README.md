@@ -7,3 +7,5 @@ voor de splash screen heb ik
 gerunt, want om een depency te downloaden heb ik internet nodig
 
 - fonts voor de app, ik was de pubspec layout vergeten...
+- was vergeten dat je positioned.fill moest gebruiken voor de map,
+- hoe factory werkte
