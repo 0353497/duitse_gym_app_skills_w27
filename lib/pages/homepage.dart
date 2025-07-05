@@ -1,6 +1,8 @@
 import 'package:duitse_gym_app/data/users.dart';
 import 'package:duitse_gym_app/pages/loginpage.dart';
+import 'package:duitse_gym_app/pages/mappage.dart';
 import 'package:duitse_gym_app/pages/membership_page.dart';
+import 'package:duitse_gym_app/pages/newspage.dart';
 import 'package:flutter/material.dart';
 
 class Homepage extends StatelessWidget {
@@ -70,7 +72,15 @@ class Homepage extends StatelessWidget {
             ),
              HomePageCard(
                icon: "assets/Icons/Location on.png",
-               text: "Studios", ontap: () {  },
+               text: "Studios", ontap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (_) => MapPage()));
+               },
+             ),
+             HomePageCard(
+               icon: "assets/Icons/Today.png",
+               text: "News", ontap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (_) => Newspage()));
+               },
              )
           ],
         ),
